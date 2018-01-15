@@ -21,7 +21,8 @@
     "lint": "standard --verbose | snazzy",
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
     "fixcode": "standard --fix",
-    "git-hook": "npm run lint -s && npm run test -s"
+    "git-hook": "npm run lint -s && npm run test -s",
+    "flow": "flow"
   },
   "dependencies": {
     "apisauce": "^0.14.2",
@@ -36,6 +37,8 @@
     "react-native-animatable": "^1.2.4",
     "react-native-config": "^0.10.0",
     "react-native-i18n": "1.0.0",
+    "react-native-material-ui": "^1.19.0",
+    "react-native-nfc": "^0.3.0",
     "react-native-vector-icons": "4.3.0",
     "react-navigation": "^1.0.0-beta.21",
     "react-redux": "^5.0.6",
@@ -58,6 +61,7 @@
     "babel-preset-react-native": "^3.0.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "flow-bin": "0.56.0",
     "husky": "^0.14.3",
     "ignite-animatable": "^1.0.0",
     "ignite-i18n": "^1.1.1",
@@ -106,6 +110,11 @@
       "XMLHttpRequest",
       "FormData",
       "React$Element"
+    ]
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
     ]
   }
 }

@@ -10,8 +10,8 @@ function ReduxNavigation (props) {
     dispatch,
     state: nav
   })
-
-  return <AppNavigation navigation={navigation} />
+  const swipeEnabled = true
+  return <AppNavigation navigation={navigation} screenProps={swipeEnabled} />
 }
 
 const mapStateToProps = state => ({ nav: state.nav })

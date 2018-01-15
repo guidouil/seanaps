@@ -1,6 +1,7 @@
-import { StackNavigator, TabNavigator } from 'react-navigation'
+import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation'
 import React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
+import { Image } from 'react-native';
 import AboutScreen from '../Containers/AboutScreen'
 import WalletScreen from '../Containers/WalletScreen'
 import ProgramScreen from '../Containers/ProgramScreen'
@@ -14,12 +15,11 @@ const PrimaryNav = TabNavigator({
   DashboardScreen: {
     screen: DashboardScreen,
     navigationOptions: {
-      tabBarLabel: ({ focused }) => (focused ? 'DASHBOARD' : ''),
+      tabBarLabel: 'Dashboard',
       tabBarIcon: ({ tintColor }) => (
-        <FontAwesome
-          name={'home'}
-          size={26}
-          style={{ color: tintColor }}
+        <Image
+          source={require('../../assets/images/icn-dashboard.png')}
+          style={[styles.icon, { tintColor: tintColor }]}
         />
       ),
     },
@@ -27,12 +27,11 @@ const PrimaryNav = TabNavigator({
   ProgramScreen: {
     screen: ProgramScreen,
     navigationOptions: {
-      tabBarLabel: ({ focused }) => (focused ? 'PROGRAM' : ''),
+      tabBarLabel: 'Program',
       tabBarIcon: ({ tintColor }) => (
-        <FontAwesome
-          name={'calendar'}
-          size={26}
-          style={{ color: tintColor }}
+        <Image
+          source={require('../../assets/images/icn-program.png')}
+          style={[styles.icon, { tintColor: tintColor }]}
         />
       ),
     },
@@ -40,12 +39,11 @@ const PrimaryNav = TabNavigator({
   WalletScreen: {
     screen: WalletScreen,
     navigationOptions: {
-      tabBarLabel: ({ focused }) => (focused ? 'WALLET' : ''),
+      tabBarLabel: 'Wallet',
       tabBarIcon: ({ tintColor }) => (
-        <FontAwesome
-          name={'tachometer'}
-          size={26}
-          style={{ color: tintColor }}
+        <Image
+          source={require('../../assets/images/icn-wallet.png')}
+          style={[styles.icon, { tintColor: tintColor }]}
         />
       ),
     },
@@ -53,12 +51,11 @@ const PrimaryNav = TabNavigator({
   AboutScreen: {
     screen: AboutScreen,
     navigationOptions: {
-      tabBarLabel: ({ focused }) => (focused ? 'ABOUT' : ''),
+      tabBarLabel: 'About',
       tabBarIcon: ({ tintColor }) => (
-        <FontAwesome
-          name={'info-circle'}
-          size={26}
-          style={{ color: tintColor }}
+        <Image
+          source={require('../../assets/images/icn-about.png')}
+          style={[styles.icon, { tintColor: tintColor }]}
         />
       ),
     },
@@ -66,10 +63,17 @@ const PrimaryNav = TabNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-    initialRouteName: 'DashboardScreen',
+  initialRouteName: 'DashboardScreen',
+  tabBarComponent: TabBarBottom,
+  tabBarPosition: 'bottom',
+  swipeEnabled: true,
+  animationEnabled: true,
   navigationOptions: {
     headerStyle: styles.header
-  }
+  },
+  tabBarOptions: {
+    activeTintColor: '#000000',
+  },
 })
 
 export default PrimaryNav
