@@ -1,6 +1,4 @@
 rootProject.name = 'seanaps'
-include ':react-native-nfc'
-project(':react-native-nfc').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-nfc/android')
 include ':react-native-config'
 project(':react-native-config').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config/android')
 include ':react-native-i18n'
