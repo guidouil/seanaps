@@ -25,6 +25,7 @@
     "flow": "flow"
   },
   "dependencies": {
+    "@smartractechnology/react-native-rfid-nfc": "^0.4.0",
     "apisauce": "^0.14.2",
     "format-json": "^1.0.3",
     "identity-obj-proxy": "^3.0.0",
