@@ -4,6 +4,10 @@ import { Button, Subheader, Toolbar, COLOR } from 'react-native-material-ui'
 import { connect } from 'react-redux'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
+
+// import component
+import IconButton from "../Components/IconButton";
+
 // Styles
 import styles from './Styles/DashboardScreenStyle'
 
@@ -27,11 +31,9 @@ class DashboardScreen extends Component {
           <Toolbar
             centerElement="SEANAPS 2018"
             rightElement={
-              <TouchableOpacity onPress={() => this.openModal()}>
-                <Image
-                  source={require('../../assets/images/icn-lock.png')}
-                />
-              </TouchableOpacity>
+              <IconButton onPress={() => this.openModal()}
+                source={require('../../assets/images/icn-lock.png')}>
+              </IconButton>
             }
             style={{
               container: { backgroundColor: '#ffffff' },
