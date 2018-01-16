@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView, View, Modal, Image, TouchableOpacity } from 'react-native'
-import { Button, Subheader, Toolbar, COLOR } from 'react-native-material-ui'
-import { connect } from 'react-redux'
+import NFC from "@smartractechnology/react-native-rfid-nfc";
+import React, { Component } from 'react';
+import { ScrollView, Text, KeyboardAvoidingView, View, Modal, Image, TouchableOpacity } from 'react-native';
+import { Button, Subheader, Toolbar, COLOR } from 'react-native-material-ui';
+import { connect } from 'react-redux';
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
@@ -9,7 +10,7 @@ import { connect } from 'react-redux'
 import IconButton from "../Components/IconButton";
 
 // Styles
-import styles from './Styles/DashboardScreenStyle'
+import styles from './Styles/DashboardScreenStyle';
 
 class DashboardScreen extends Component {
   state = {
@@ -64,6 +65,16 @@ class DashboardScreen extends Component {
         </Modal>
       </ScrollView>
     )
+  }
+
+  componentDidMount() {
+    this.bindNfcListener();
+  }
+
+  bindNfcListener() {
+    NFC.addListener((payload) => {
+      alert(payload.data.id);
+    })
   }
 }
 
