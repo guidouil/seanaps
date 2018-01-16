@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView, View, Modal, Image } from 'react-native'
+import { ScrollView, Text, KeyboardAvoidingView, View, Modal, Image, TouchableOpacity } from 'react-native'
 import { Button, Subheader, Toolbar, COLOR } from 'react-native-material-ui'
 import { connect } from 'react-redux'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
@@ -26,31 +26,20 @@ class DashboardScreen extends Component {
         <KeyboardAvoidingView behavior='position'>
           <Toolbar
             centerElement="SEANAPS 2018"
-            rightElement="lock"
-            onRightElementPress={() => this.openModal()}
+            rightElement={
+              <TouchableOpacity onPress={() => this.openModal()}>
+                <Image
+                  source={require('../../assets/images/icn-lock.png')}
+                />
+              </TouchableOpacity>
+            }
             style={{
               container: { backgroundColor: '#ffffff' },
               titleText: { color: '#000000' },
               rightElement: { color: '#000000' },
             }}
           />
-          <Subheader text="Flat buttons" />
-          <View style={styles.rowContainer}>
-            <View style={styles.button}>
-              <Button primary text="Primary" />
-            </View>
-            <View style={styles.button}>
-              <Button accent text="Accent" />
-            </View>
-          </View>
-          <View style={styles.rowContainer}>
-            <View style={styles.button}>
-              <Button text="Default" />
-            </View>
-            <View style={styles.button}>
-              <Button disabled text="Disabled" />
-            </View>
-          </View>
+          <Image source={require('../../assets/images/bg-home.png')} style={styles.container} />
         </KeyboardAvoidingView>
         <Modal
           visible={this.state.modalVisible}

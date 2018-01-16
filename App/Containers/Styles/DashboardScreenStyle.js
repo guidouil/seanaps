@@ -2,9 +2,16 @@ import { StyleSheet } from 'react-native'
 import { ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
+  container: {
+    flex: 1,
+    // remove width and height to override fixed static size
+    width: null,
+    height: null,
+  },
   modalContainer: {
     flex: 1,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: 'rgba(52, 52, 52, 0.8)'
   },
   innerContainer: {
     alignItems: 'center',
