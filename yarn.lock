@@ -10,10 +10,6 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@smartractechnology/react-native-rfid-nfc@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@smartractechnology/react-native-rfid-nfc/-/react-native-rfid-nfc-0.4.0.tgz#78c66f825c170e4a635d404e837b61f5c2220b3d"
-
 "@storybook/addon-actions@^3.3.3":
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.3.tgz#468e3426eb8f109825d9b41bf77f206711fa74b3"
@@ -6888,6 +6884,10 @@ react-native-material-ui@^1.19.0:
     lodash.merge "^4.0.0"
     prop-types "^15.5.10"
     react-native-material-design-styles "^0.2.6"
+
+react-native-nfc-ios@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-nfc-ios/-/react-native-nfc-ios-0.1.5.tgz#1303e6f55d5520818ad64197eef42e574aafa703"
 
 react-native-tab-view@^0.0.70:
   version "0.0.70"

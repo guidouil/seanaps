@@ -1,4 +1,5 @@
-import NFC from "@smartractechnology/react-native-rfid-nfc";
+import { NFCNDEFReaderSession } from 'react-native-nfc-ios';
+
 import React, { Component } from 'react';
 import { ScrollView, Text, KeyboardAvoidingView, View, Modal, Image, TouchableOpacity } from 'react-native';
 import { Button, Subheader, Toolbar, COLOR } from 'react-native-material-ui';
@@ -17,6 +18,28 @@ class DashboardScreen extends Component {
     modalVisible: false,
   }
 
+  scanNfc() {
+    const readerSession = new NFCNDEFReaderSession();
+    const listener = readerSession.addEventListener('NDEFMessages', (messages) => {
+      console.log(messages);
+    });
+
+    // Show the NFC reader
+    readerSession.begin();
+
+    // Close the NFC reader
+    // readerSession.invalidate();
+
+    // Remove the event listener
+    // readerSession.removeEventListener('NDEFMessages', listener);
+
+    // Or Remove all events listeners
+    // readerSession.removeAllEventListeners('NDEFMessages');
+
+    // ⚠️ Release the native instance to free memory
+    // readerSession.release();
+  }
+
   openModal() {
     this.setState({ modalVisible: true });
   }
@@ -32,7 +55,7 @@ class DashboardScreen extends Component {
           <Toolbar
             centerElement="SEANAPS 2018"
             rightElement={
-              <IconButton onPress={() => this.openModal()}
+              <IconButton onPress={() => this.scanNfc()}
                 source={require('../../assets/images/icn-lock.png')}>
               </IconButton>
             }
@@ -65,16 +88,6 @@ class DashboardScreen extends Component {
         </Modal>
       </ScrollView>
     )
-  }
-
-  componentDidMount() {
-    this.bindNfcListener();
-  }
-
-  bindNfcListener() {
-    NFC.addListener((payload) => {
-      alert(payload.data.id);
-    })
   }
 }
 
