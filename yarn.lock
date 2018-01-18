@@ -6885,10 +6885,6 @@ react-native-material-ui@^1.19.0:
     prop-types "^15.5.10"
     react-native-material-design-styles "^0.2.6"
 
-react-native-nfc-ios@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/react-native-nfc-ios/-/react-native-nfc-ios-0.1.5.tgz#1303e6f55d5520818ad64197eef42e574aafa703"
-
 react-native-tab-view@^0.0.70:
   version "0.0.70"
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.70.tgz#1dd2ded32acd0cb6bfef38d26e53675db733b37b"
