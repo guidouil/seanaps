@@ -5,9 +5,9 @@ import styles from './Styles/IconButtonStyle'
 
 export default class IconButton extends Component {
   static propTypes = {
-    source: PropTypes.string,
+    source: Image.propTypes.source,
     onPress: PropTypes.func,
-    styles: PropTypes.object
+    styles: TouchableOpacity.propTypes.style
   }
 
   render () {

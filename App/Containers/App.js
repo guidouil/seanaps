@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { ThemeProvider } from 'react-native-material-ui'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
+import uiTheme from '../Themes/MaterialUi'
 
 // create our store
 const store = createStore()
@@ -22,7 +23,7 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <ThemeProvider>
+        <ThemeProvider uiTheme={uiTheme}>
           <RootContainer />
         </ThemeProvider>
       </Provider>
