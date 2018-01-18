@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -61,7 +60,6 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		871FC49B3284408CA924F4C2 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34B565B86C0A4F54B3399F26 /* Roboto-Bold.ttf */; };
 		878E59D6993442AD829E162B /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93FC1D1015F042F98BB51797 /* Raleway-Black.ttf */; };
-		87B7EE85EF4D42BEAB0C4974 /* libReactNativeNfcIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB070EFCA2F94562BAA16ED1 /* libReactNativeNfcIos.a */; };
 		9D629D82E3C44B39B951B164 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F15B4528B8F436BB17F939F /* Roboto-LightItalic.ttf */; };
 		9F45D2BE21A04854A2EB004E /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EBD4947D7E3431989176E65 /* Octicons.ttf */; };
 		A3F5F4E3182E49D8BF60D206 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2691C0757A7F41E486104886 /* Raleway-Medium.ttf */; };
@@ -304,13 +302,6 @@
 			remoteGlobalIDString = EB2648DF1C7BE17A00B8F155;
 			remoteInfo = ReactNativeConfig;
 		};
-		A42BFC47200FA2C100E85443 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C11CFC7C82794836946E14B6 /* ReactNativeNfcIos.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = ReactNativeNfcIos;
-		};
 		A42BFC4B200FA2C100E85443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A9D33AF1072B46BC9E3499A8 /* RNI18n.xcodeproj */;
@@ -447,9 +438,7 @@
 		B41F722A2F7946F9A4E7D768 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin.ttf"; path = "../assets/fonts/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		BA288D7CC17F4625B9E3899C /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		BAC51F5FAD0641A7B64F37C4 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		BB070EFCA2F94562BAA16ED1 /* libReactNativeNfcIos.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeNfcIos.a; sourceTree = "<group>"; };
 		BF96320BA2ED43EBA415FF98 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic.ttf"; path = "../assets/fonts/Raleway/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
-		C11CFC7C82794836946E14B6 /* ReactNativeNfcIos.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNfcIos.xcodeproj; path = "../node_modules/react-native-nfc-ios/ios/ReactNativeNfcIos.xcodeproj"; sourceTree = "<group>"; };
 		C477D463695244D68CF49C96 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		C5811C6216384B4D90E9CD91 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ThinItalic.ttf"; path = "../assets/fonts/Raleway/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
 		C95A37AF2DE14D7C8EAC83DB /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
@@ -495,7 +484,6 @@
 				64BF214BADAD4FA4919D381A /* libcxxreact.a in Frameworks */,
 				F92B2664F01842229FEAA23C /* libjschelpers.a in Frameworks */,
 				EA837C1548714D0BA9F84D7D /* libReactNativeConfig.a in Frameworks */,
-				87B7EE85EF4D42BEAB0C4974 /* libReactNativeNfcIos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +663,6 @@
 				14A2D9C7D209464883F90DB5 /* RNVectorIcons.xcodeproj */,
 				A9D33AF1072B46BC9E3499A8 /* RNI18n.xcodeproj */,
 				C95A37AF2DE14D7C8EAC83DB /* ReactNativeConfig.xcodeproj */,
-				C11CFC7C82794836946E14B6 /* ReactNativeNfcIos.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -750,14 +737,6 @@
 			isa = PBXGroup;
 			children = (
 				A42BFC45200FA2C100E85443 /* libReactNativeConfig.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A42BFC41200FA2C100E85443 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A42BFC48200FA2C100E85443 /* libReactNativeNfcIos.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -991,10 +970,6 @@
 					ProjectRef = C95A37AF2DE14D7C8EAC83DB /* ReactNativeConfig.xcodeproj */;
 				},
 				{
-					ProductGroup = A42BFC41200FA2C100E85443 /* Products */;
-					ProjectRef = C11CFC7C82794836946E14B6 /* ReactNativeNfcIos.xcodeproj */;
-				},
-				{
 					ProductGroup = A42BFC3D200FA2C100E85443 /* Products */;
 					ProjectRef = A9D33AF1072B46BC9E3499A8 /* RNI18n.xcodeproj */;
 				},
@@ -1215,13 +1190,6 @@
 			fileType = archive.ar;
 			path = libReactNativeConfig.a;
 			remoteRef = A42BFC44200FA2C100E85443 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A42BFC48200FA2C100E85443 /* libReactNativeNfcIos.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libReactNativeNfcIos.a;
-			remoteRef = A42BFC47200FA2C100E85443 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		A42BFC4C200FA2C100E85443 /* libRNI18n.a */ = {
@@ -1477,20 +1445,12 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
-					"$(SRCROOT)/../node_modules/react-native-nfc-ios/ios",
 				);
 				INFOPLIST_FILE = seanapsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1511,20 +1471,12 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
-					"$(SRCROOT)/../node_modules/react-native-nfc-ios/ios",
 				);
 				INFOPLIST_FILE = seanapsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1550,7 +1502,6 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
-					"$(SRCROOT)/../node_modules/react-native-nfc-ios/ios",
 				);
 				INFOPLIST_FILE = seanaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1580,7 +1531,6 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
-					"$(SRCROOT)/../node_modules/react-native-nfc-ios/ios",
 				);
 				INFOPLIST_FILE = seanaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1613,19 +1563,11 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
-					"$(SRCROOT)/../node_modules/react-native-nfc-ios/ios",
 				);
 				INFOPLIST_FILE = "seanaps-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1656,19 +1598,11 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
-					"$(SRCROOT)/../node_modules/react-native-nfc-ios/ios",
 				);
 				INFOPLIST_FILE = "seanaps-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1697,13 +1631,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.seanaps-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1728,13 +1655,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.seanaps-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
