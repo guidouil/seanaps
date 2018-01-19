@@ -1,4 +1,4 @@
-import { NFCNDEFReaderSession } from 'react-native-nfc-ios';
+import NfcManager, { NdefParser } from 'react-native-nfc-manager';
 
 import React, { Component } from 'react';
 import { ScrollView, Text, KeyboardAvoidingView, View, Modal, Image, TouchableOpacity } from 'react-native';
@@ -16,28 +16,14 @@ import styles from './Styles/DashboardScreenStyle';
 class DashboardScreen extends Component {
   state = {
     modalVisible: false,
+    tag:false,
   }
 
   scanNfc() {
-    const readerSession = new NFCNDEFReaderSession();
-    const listener = readerSession.addEventListener('NDEFMessages', (messages) => {
-      console.log(messages);
-    });
-
-    // Show the NFC reader
-    readerSession.begin();
-
-    // Close the NFC reader
-    // readerSession.invalidate();
-
-    // Remove the event listener
-    // readerSession.removeEventListener('NDEFMessages', listener);
-
-    // Or Remove all events listeners
-    // readerSession.removeAllEventListeners('NDEFMessages');
-
-    // ⚠️ Release the native instance to free memory
-    // readerSession.release();
+    NfcManager.registerTagEvent(tag => {
+      console.log('Tag Discovered', tag);
+      this.setState({ tag });
+    }, 'Place device over wristband', true);
   }
 
   openModal() {
@@ -55,9 +41,10 @@ class DashboardScreen extends Component {
           <Toolbar
             centerElement="SEANAPS 2018"
             rightElement={
-              <IconButton onPress={() => this.scanNfc()}
-                source={require('../../assets/images/icn-lock.png')}>
-              </IconButton>
+              <IconButton
+                onPress={() => this.openModal()}
+                source={require('../../assets/images/icn-lock.png')}
+              />
             }
             style={{
               container: { backgroundColor: '#ffffff' },
@@ -66,6 +53,7 @@ class DashboardScreen extends Component {
             }}
           />
           <Image source={require('../../assets/images/bg-home.png')} style={styles.container} />
+          <Text>{JSON.stringify(this.state.tag)}</Text>
         </KeyboardAvoidingView>
         <Modal
           visible={this.state.modalVisible}
